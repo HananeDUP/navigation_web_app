@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Data recap</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+    <link rel="stylesheet" href="../src/style.css" />
+</head>
+
+<body>
+    <nav class="navbar-menu navbar is-dark" role="navigation" aria-label="main navigation">
+        <div class="navbar-start">
+            <h1><span color="red">AFA Watch</span></h1>
+        </div>
+    </nav>
+    <div class="tabs is-centered is-boxed">
+        <ul>
+            <li><a class="navbar-item" href="calendar.html">Calendar Type</a></li>
+            <li><a class="navbar-item" href="marketcodes.html">Market codes</a></li>
+            <li><a class="navbar-item" href="concattables.html">Static data check</a></li>
+            <li><a class="navbar-item" href="concattables.html">Market Schedules</a></li>
+            <li><a class="navbar-item" href="concattables.html">Batches list</a></li>
+            <li> <a class="navbar-item" href="concattables.html">Private links</a></li>
+        </ul>
+    </div>
+    <!-- <div class="navbar-end">
+            <a class="navbar-item" href="calendar.html">Calendar Type</a>
+            <a class="navbar-item" href="marketcodes.html">Market codes</a>
+            <a class="navbar-item" href="concattables.html">Static data check</a>
+            <a class="navbar-item" href="concattables.html">Market Schedules</a>
+            <a class="navbar-item" href="concattables.html">Batches list</a>
+            <a class="navbar-item" href="concattables.html">Machines list</a>
+            <a class="navbar-item" href="concattables.html">Private links</a>
+
+        </div> -->
+    <!-- </nav> -->
+    <div class="container">
+        <h1 class="title is-4">Static data check</h1>
+        <div id="calendar">
+            <table border="1" class="dataframe table is-striped is-narrow" id="my_table_to_convert">
+                <thead>
+                    <tr style="text-align: right;">
+                        <th></th>
+                        <th>market</th>
+                        <th>Tarding</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>0</th>
+                        <td>ENX-MAIN</td>
+                        <td>Closed</td>
+                    </tr>
+                    <tr>
+                        <th>1</th>
+                        <td>ENA-MAIN</td>
+                        <td>Halfday</td>
+                    </tr>
+                    <tr>
+                        <th>2</th>
+                        <td>CPH-MAIN</td>
+                        <td>Halfday</td>
+                    </tr>
+                    <tr>
+                        <th>3</th>
+                        <td>HEL-MAIN</td>
+                        <td>Closed</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="marketcodes">
+            <table border="1" class="dataframe table is-striped is-narrow" id="my_table_to_convert">
+                <thead>
+                    <tr style="text-align: right;">
+                        <th></th>
+                        <th>code</th>
+                        <th>market</th>
+                        <th>City</th>
+                        <th>holiday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>0</th>
+                        <td>FR</td>
+                        <td>ENX-MAIN</td>
+                        <td>Paris</td>
+                        <td>Ascension</td>
+                    </tr>
+                    <tr>
+                        <th>1</th>
+                        <td>AM</td>
+                        <td>ENA-MAIN</td>
+                        <td>Amsterdam</td>
+                        <td>Ascension</td>
+                    </tr>
+                    <tr>
+                        <th>2</th>
+                        <td>CO</td>
+                        <td>CPH-MAIN</td>
+                        <td>Copenhagen</td>
+                        <td>Ascension</td>
+                    </tr>
+                    <tr>
+                        <th>3</th>
+                        <td>HE</td>
+                        <td>HEL-MAIN</td>
+                        <td>HELSENKI</td>
+                        <td>Ascension</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" charset="utf8"
+        src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.dataframe').DataTable();
+        });</script>
+</body>
+
+</html>

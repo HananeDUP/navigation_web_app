@@ -1,0 +1,14 @@
+h1 {
+    font-size: 1.8em;
+}
+
+.container {
+    /* display: inline-flexbox;     */
+    /* margin-left: 10%; */
+}
+
+#calendar, #marketcodes {
+    display: inline-block;
+    margin:3%;
+
+}
